@@ -1,0 +1,114 @@
+.error-body {
+  background: rgb(21, 21, 21);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Titulos", serif;
+  overflow: hidden;
+}
+
+.error-card {
+  width: 90%;
+  max-width: 480px;
+  background: black;
+  border: 2px solid rgb(143, 9, 36);
+  border-radius: 18px;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 25px rgb(143, 9, 36);
+  animation: fadeIn 1.2s ease-out;
+}
+
+.smoke {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  opacity: 0.18;
+  transform: translateX(-50%);
+  animation: smokeFloat 5s infinite linear;
+  pointer-events: none;
+}
+
+.error-title {
+  font-size: 2rem;
+  color: rgb(216, 166, 14);
+  margin-bottom: 10px 0 15px;
+  text-shadow: 0 0 8px rgb(184, 48, 75);
+  animation: glow 2s infinite alternate;
+}
+
+.error-msg {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.5rem;
+}
+
+.error-msg span {
+  color: rgb(216, 166, 14);
+}
+
+.error-img {
+  margin-bottom: 15px;
+}
+
+.error-img img {
+  width: 180px;
+  animation: floatImg 3s infinite ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+.error-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: rgb(216, 166, 14);
+  color: black;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgb(216, 166, 14);
+}
+
+.error-btn:hover {
+  background: rgb(143, 9, 36);
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgb(143, 9, 36);
+}
+
+.error-footer {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.85rem;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatImg {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 6px rgb(143, 9, 36); }
+  to   { text-shadow: 0 0 20px rgb(216, 166, 14); }
+}
+
+@keyframes smokeFloat {
+  from { opacity: 0.15; transform: translateX(-50%) translateY(0); }
+  to   { opacity: 0.25; transform: translateX(-50%) translateY(-15px); }
+}
