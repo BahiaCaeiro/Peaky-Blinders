@@ -37,7 +37,7 @@
 .error-title {
   font-size: 2rem;
   color: rgb(216, 166, 14);
-  margin-bottom: 10px 0 15px;
+  margin: 10px 0 15px;
   text-shadow: 0 0 8px rgb(184, 48, 75);
   animation: glow 2s infinite alternate;
 }
@@ -111,4 +111,5 @@
 @keyframes smokeFloat {
   from { opacity: 0.15; transform: translateX(-50%) translateY(0); }
   to   { opacity: 0.25; transform: translateX(-50%) translateY(-15px); }
+
 }
