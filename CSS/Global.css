@@ -289,7 +289,8 @@ h2 {
 }
 
 .form-peaky input {
-  width: 97%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 12px;
   background: black;
   border: 1px solid rgb(143, 9, 36);
@@ -302,7 +303,8 @@ h2 {
 }
 
 .form-peaky select {
-  width: 97%;
+  width: 100%;
+  box-sizing: border-box;
   padding: 12px;
   background: black;
   border: 1px solid rgb(143, 9, 36);
@@ -404,4 +406,5 @@ h2 {
   box-shadow: 0 0 20px rgb(143, 9, 36);
   color: black;
 }
+
 
