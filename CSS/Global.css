@@ -77,7 +77,6 @@ p {
   padding: 15px 20px;
   position: sticky; 
   top: 0;
-  width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 12px white;
 
@@ -332,7 +331,7 @@ h2 {
   background: rgb(143, 9, 36);
   border: none;
   border-radius: 8px;
-  color: black;
+  color: white;
   font-size: 1.3rem;
   cursor: pointer;
   transition: 0.3s ease;
@@ -344,6 +343,7 @@ h2 {
   background: rgb(216, 166, 14);
   transform: scale(1.03);
   box-shadow: 0 0 20px rgb(16, 16, 16);
+  color: black;
 }
 
 #tyc {
@@ -390,7 +390,7 @@ h2 {
   background: rgb(143, 9, 36);
   border: none;
   border-radius: 8px;
-  color: black;
+  color: white;
   font-size: 1.2rem;
   cursor: pointer;
   transition: 0.3s ease;
@@ -402,5 +402,6 @@ h2 {
   background: rgb(196, 17, 53);
   transform: scale(1.05);
   box-shadow: 0 0 20px rgb(143, 9, 36);
-
+  color: black;
 }
+
